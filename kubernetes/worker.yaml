@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: worker
-        image: prajwal1050/ai-task-worker:c15f463cdd9d1d8358a4621c6862531fbe735008
+        image: prajwal1050/ai-task-worker:816f376aab1b861e3e6698d2a51bde65e8ee6b36
 
         env:
         - name: MONGO_URI
