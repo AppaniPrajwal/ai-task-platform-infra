@@ -1,5 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
   name: backend
   namespace: ai-task-platform
@@ -26,7 +27,10 @@ spec:
 
         env:
         - name: MONGO_URI
-          value: "mongodb+srv://b210093_db_user:iidVYjcx7vK794FK@cluster0.xyitwlh.mongodb.net/ai-tasks?appName=Cluster0"
+          valueFrom:
+            secretKeyRef:
+              name: app-secrets
+              key: mongo-uri
 
         - name: REDIS_URL
           value: "redis://redis:6379"
