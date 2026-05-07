@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: prajwal1050/backend:v2
+        image: prajwal1050/ai-task-backend:latest
 
         ports:
         - containerPort: 5000

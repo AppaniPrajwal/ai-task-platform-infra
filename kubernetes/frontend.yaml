@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: prajwal1050/frontend:v1
+        image: prajwal1050/ai-task-frontend:latest
         ports:
         - containerPort: 3000
         resources:
