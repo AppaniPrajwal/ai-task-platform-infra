@@ -15,10 +15,10 @@ spec:
     spec:
       containers:
       - name: worker
-        image: username/ai-task-worker:latest
+        image: prajwal1050/worker:v5
         env:
         - name: MONGO_URI
-          value: "mongodb://mongodb:27017/ai-tasks"
+          value: "mongodb+srv://b210093_db_user:iidVYjcx7vK794FK@cluster0.xyitwlh.mongodb.net/ai-tasks?appName=Cluster0"
         - name: REDIS_URL
           value: "redis://redis:6379"
         resources:
